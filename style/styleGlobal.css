@@ -6,6 +6,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+.navMenu{
+    background-color: red;
+}
+
 .mainTittle{
     color: azure;
 }
@@ -77,3 +81,14 @@ text-align: center;
 .copytext{
     text-align: center;
 }
+
+@media (max-width: 768px) {
+   header{
+    flex-direction: column;
+
+   }
+   .logoComTittle{
+    flex-direction: column;
+   }
+  }
+  
