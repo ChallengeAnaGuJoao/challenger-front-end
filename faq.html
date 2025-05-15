@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perguntas frequentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style/styleGlobal.css">
     <link rel="stylesheet" href="style/faq.css">
 </head>
@@ -11,7 +12,7 @@
     <header>
         <div class="logoComTittle">
         <img src="image/gradiente-de-ilustracao-de-passaro-colorido.png" alt="" class="logo">
-        <h1 class="mainTittle">Olá mundo</h1>
+        <h1 class="mainTittle">Atende +</h1>
         </div>
         <nav class="navMenu">
             <ul class="UlHeader">
@@ -24,25 +25,93 @@
         </nav>
     </header>
     <main>
-        <section class="faq">
-            <h2 class="faq-titulo">Perguntas Frequentes</h2>
-          
-            <div class="faq-item">
-              <h3 class="faq-pergunta">O que é o Projeto Foda?</h3>
-              <p class="faq-resposta">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
-            </div>
-          
-            <div class="faq-item">
-              <h3 class="faq-pergunta">Quem pode participar?</h3>
-              <p class="faq-resposta">Todos os alunos envolvidos nas turmas participantes do projeto.</p>
-            </div>
-          
-            <div class="faq-item">
-              <h3 class="faq-pergunta">Como posso acessar o chatbot?</h3>
-              <p class="faq-resposta">Clique na aba "ChatBot" no menu superior para começar a interagir.</p>
-            </div>
-          </section>
-          
+<section class="faq">
+  <h2 class="faq-titulo">Perguntas Frequentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  
+
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  
+
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto Foda?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-toggle">
+      <i class="fas fa-plus icon"></i>
+      <span class="faq-pergunta">O que é o Projeto FodaULTIMO?</span>
+    </button>
+    <p class="faq-resposta hidden">É uma iniciativa dos alunos da FIAP para criar soluções criativas usando tecnologia.</p>
+  </div>
+</section>
+
     </main>
     <footer>
         <div class="colunas">
@@ -69,5 +138,22 @@
             <p class="copytext">&copy;feito por AAAAAAAAAAAAAAAA</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+          button.addEventListener('click', () => {
+            const resposta = button.nextElementSibling;
+            const icon = button.querySelector('.icon');
+      
+            resposta.classList.toggle('hidden');
+      
+            if (resposta.classList.contains('hidden')) {
+              icon.classList.replace('fa-minus', 'fa-plus');
+            } else {
+              icon.classList.replace('fa-plus', 'fa-minus');
+            }
+          });
+        });
+      </script>
+      
 </body>
 </html>

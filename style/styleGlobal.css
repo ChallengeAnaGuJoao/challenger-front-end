@@ -7,7 +7,7 @@
 }
 
 .navMenu{
-    background-color: red;
+    
 }
 
 .mainTittle{
@@ -41,46 +41,76 @@ header{
     color: azure;
 }
 
+.liHeader>a{
+    color: azure;
+    text-decoration: none;
+}
+
 main{
     min-height: 100dvh;
     background-color:azure;
 }
 
-footer{
-    background-color:rgb(20, 19, 19);
+footer {
+    background-color: rgb(20, 19, 19);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.colunas{
+.colunas {
     display: flex;
-
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-footer *{
+footer * {
     color: azure;
 }
 
-.coluna{
+.coluna {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 1 250px;
+    padding: 10px;
+    transition: transform 0.3s ease;
 }
 
-.textColuna{
-text-align: center;
-font-size: 12px;
+.coluna:hover {
+    transform: translateY(-5px);
 }
 
-.tittleColuna{
-text-align: center;
-}
-
-.copytext{
+.textColuna {
     text-align: center;
+    font-size: 13px;
+    margin: 5px 0;
 }
+
+.tittleColuna {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid azure;
+    padding-bottom: 5px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+}
+
+.copytext {
+    color: #ccc;
+}
+
 
 @media (max-width: 768px) {
    header{
@@ -90,5 +120,12 @@ text-align: center;
    .logoComTittle{
     flex-direction: column;
    }
+   .colunas {
+    flex-direction: column;
+    align-items: center;
+}
+.coluna {
+    max-width: 100%;
+}
   }
   

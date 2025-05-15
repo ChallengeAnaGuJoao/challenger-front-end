@@ -1,11 +1,12 @@
 main{
     display: flex;
     align-items: center;
+    padding: 2rem 0;
 }
 
 .faq {
     padding: 2rem;
-    max-width: 70%;
+    width: 70%;
     margin: 0 auto;
     background-color: #fdfdfd;
     border-radius: 10px;
@@ -36,5 +37,38 @@ main{
     font-size: 1rem;
     color: #777;
     line-height: 1.5;
+  }
+  
+  .faq-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .faq-toggle .icon {
+    font-size: 1.1rem;
+    color: #555;
+    transition: transform 0.3s;
+  }
+  
+  .faq-resposta {
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+  
+  .hidden {
+    display: none;
   }
   
