@@ -1,15 +1,43 @@
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3.3rem;
+    background-color: azure;
+}
+
+.contatoWrapper {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.imagemContato,
+.contatoContainer {
+    flex: 0 0 50%;
+}
+
+.imagemContato{
+    display: flex;
+    align-items: center;
+}
+
+.imagemContato img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 .contatoContainer {
-    width: 100%;
-    max-width: 700px;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 12px;
+    padding: 3rem;
     box-shadow: 0 8px 24px rgba(112,112,112,0.3);
 }
 
@@ -86,6 +114,14 @@ main{
 @media (max-width: 768px) {
     .tituloContato {
         font-size: 1.5rem;
+    }
+    .imagemContato,
+    .contatoContainer {
+        flex: 0 0 100%;
+    }
+     .contatoWrapper {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 
