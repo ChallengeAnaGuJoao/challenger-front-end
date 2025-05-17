@@ -1,87 +1,122 @@
-.hero {
+/* Utilitários gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+main {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Seção Hero */
+.hero {
     background-color: #e0f7fa;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
     gap: 40px;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .hero-text {
-    flex: 1;
+    flex: 1 1 50%;
 }
 
 .hero-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 40px;
     color: #004d40;
+    margin-bottom: 16px;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 24px;
     color: #333;
-    margin-bottom: 20px;
-}
-
-.hero-img {
-    max-width: 400px;
-    flex: 1;
 }
 
 .botaoChamada {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 28px;
     background-color: #00796b;
     color: white;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .botaoChamada:hover {
     background-color: #004d40;
 }
 
+.hero-img-container {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
 .servicos {
-    padding: 60px 40px;
     background-color: #f5f5f5;
+    width: 100%;
 }
 
 .tituloSessao {
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
+    font-size: 32px;
     color: #2e7d32;
+    margin-bottom: 40px;
 }
 
 .cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .card {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 250px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
+    font-size: 22px;
     color: #00796b;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .card p {
-    font-size: 14px;
-    color: #444;
+    font-size: 16px;
+    color: #555;
 }

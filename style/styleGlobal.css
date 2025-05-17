@@ -71,10 +71,6 @@ header {
 main {
     min-height: 100dvh;
     background-color: azure;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: start;
 }
 
 footer {
