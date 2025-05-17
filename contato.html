@@ -15,6 +15,9 @@
             <h1 class="mainTittle">Atende +</h1>
         </div>
     </a>
+       <button class="menuToggle" aria-label="Abrir menu">
+    ☰
+</button>
     <nav class="navMenu">
         <ul class="UlHeader">
             <li class="liHeader"><a href="index.html">Home</a></li>
@@ -75,5 +78,13 @@
             <p class="copytext">&copy;feito por AAAAAAAAAAAAAAAA</p>
         </div>
     </footer>
+    <script>
+    const menuToggle = document.querySelector('.menuToggle');
+    const navMenu = document.querySelector('.navMenu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+    });
+</script>
 </body>
 </html>

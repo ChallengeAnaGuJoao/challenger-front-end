@@ -11,8 +11,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: .3rem 1.5rem;
     background-color: rgb(20, 19, 19);
-    padding: 0rem;
     min-height: 80px;
 }
 
@@ -25,6 +25,15 @@ header {
 .logo {
     max-width: 100px;
     height: auto;
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: azure;
+    cursor: pointer;
 }
 
 .mainTittle {
@@ -83,11 +92,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .coluna {
-    flex: 1 1 250px;
+    flex: 1 1 100px;
     padding: 10px;
     transition: transform 0.3s ease;
 }
@@ -132,10 +140,45 @@ footer {
 }
 
 @media (max-width: 768px) {
+      .menuToggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
     header {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         padding: 1rem;
+    }
+    
+    .navMenu {
+        display: none;
+        width: 100%;
+    }
+
+     .navMenu.open {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+      .navMenu ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(20, 19, 19);
+        padding: 1rem 0;
+    }
+
+      @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
       .logo {
