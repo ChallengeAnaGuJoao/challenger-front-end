@@ -8,7 +8,7 @@
 body {
     line-height: 1.6;
     color: #333;
-    background-color: #fafafa;
+    background-color: var(--bg-clarinho); /* fundo suave */
 }
 
 main {
@@ -24,7 +24,7 @@ main {
 
 /* Seção Hero */
 .hero {
-    background-color: #e0f7fa;
+    background-color: var(--bg-clarinho); /* mesmo tom do fundo principal */
 }
 
 .hero-container {
@@ -40,20 +40,20 @@ main {
 
 .hero-text h2 {
     font-size: 40px;
-    color: #004d40;
+    color: var(--roxo-escuro); /* título em roxo escuro */
     margin-bottom: 16px;
 }
 
 .hero-text p {
     font-size: 20px;
     margin-bottom: 24px;
-    color: #333;
+    color: #444; /* texto suavizado */
 }
 
 .botaoChamada {
     display: inline-block;
     padding: 12px 28px;
-    background-color: #00796b;
+    background-color: var(--verde-escuro); /* botão em verde escuro */
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -62,7 +62,7 @@ main {
 }
 
 .botaoChamada:hover {
-    background-color: #004d40;
+    background-color: #00352c; /* tom mais escuro para hover */
 }
 
 .hero-img-container {
@@ -78,15 +78,16 @@ main {
     height: auto;
 }
 
+/* Sessão Serviços */
 .servicos {
-    background-color: #f5f5f5;
+    background-color: var(--quase-branco); /* fundo suave para seções */
     width: 100%;
 }
 
 .tituloSessao {
     text-align: center;
     font-size: 32px;
-    color: #2e7d32;
+    color: var(--roxo-escuro); /* título roxo */
     margin-bottom: 40px;
 }
 
@@ -99,7 +100,7 @@ main {
 .card {
     background-color: white;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     padding: 30px 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -107,12 +108,12 @@ main {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card h3 {
     font-size: 22px;
-    color: #00796b;
+    color: var(--verde-escuro); /* título dos cards */
     margin-bottom: 12px;
 }
 
