@@ -23,6 +23,11 @@
     --bg-escurinho:#eefafc;
 }
 
+.selected{
+    color: var(--rosa-claro) !important;
+    border-bottom: 1px solid var(--rosa-claro);
+}
+
 header {
     display: flex;
     align-items: center;
@@ -127,6 +132,11 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin: 5px 0;
+}
+
+.textColuna > a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .copy {
