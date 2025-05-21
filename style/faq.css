@@ -5,19 +5,17 @@ main {
     background-color: var(--bg-clarinho);
 }
 
-/* Container principal do FAQ */
 .faq {
     padding: 2rem;
     width: 70%;
     margin: 0 auto;
-    background-color: #fdfcfb; /* Quase branco, toque amarelado */
+    background-color: #fdfcfb;
     border-radius: 10px;
     box-shadow: -4px 10px 34px -1px rgba(112, 112, 112, 0.25);
     -webkit-box-shadow: -4px 10px 34px -1px rgba(112, 112, 112, 0.25);
     -moz-box-shadow: -4px 10px 34px -1px rgba(112, 112, 112, 0.25);
 }
 
-/* Título central */
 .faq-titulo {
     text-align: center;
     margin-bottom: 2rem;
@@ -26,12 +24,10 @@ main {
     color: var(--roxo-escuro);
 }
 
-/* Item de FAQ (bloco) */
 .faq-item {
     margin-bottom: 1.5rem;
 }
 
-/* Botão que abre/fecha a resposta */
 .faq-toggle {
     display: flex;
     align-items: center;
@@ -52,14 +48,12 @@ main {
     color: var(--roxo-escuro);
 }
 
-/* Ícone que rotaciona */
 .faq-toggle .icon {
     font-size: 1.1rem;
     color: var(--azul-principal);
     transition: transform 0.3s;
 }
 
-/* Texto da pergunta */
 .faq-pergunta {
     font-size: 1.2rem;
     font-weight: 600;
@@ -67,7 +61,6 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Resposta oculta */
 .faq-resposta {
     margin-left: 2rem;
     font-size: 1rem;
@@ -80,7 +73,6 @@ main {
     border-radius: 4px;
 }
 
-/* Esconder resposta */
 .hidden {
     display: none;
 }

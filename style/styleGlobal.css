@@ -34,6 +34,8 @@ header {
     justify-content: space-between;
     background-color: var(--roxo-escuro);
     height: 80px;
+    overflow: visible;
+    position: relative;
 }
 
 .logoComTittle {
@@ -43,7 +45,7 @@ header {
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 140px;
     height: auto;
 }
 
@@ -76,6 +78,7 @@ header {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    overflow: visible;
 }
 
 .liHeader a {
@@ -160,6 +163,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hero-container{
+        justify-content: center !important;
+        align-items: center;
+    }
+    main{
+        justify-content: center;
+    }
       .menuToggle {
         display: block;
         position: absolute;
@@ -171,6 +181,7 @@ footer {
         text-align: center;
         align-items: center;
         justify-content: center;
+        padding-top: 6rem;
     }
     
     .navMenu {
@@ -185,7 +196,7 @@ footer {
       .navMenu ul {
         flex-direction: column;
         align-items: center;
-        background-color: rgb(20, 19, 19);
+        background-color: var(--roxo-escuro);
         padding: 1rem 0;
     }
 
@@ -231,5 +242,11 @@ footer {
 
     main {
         padding: 1rem;
+    }
+    .tituloSessao{
+        font-size: 1.3rem !important;
+    }
+    .card h3 {
+        font-size: 1rem !important;
     }
 }
