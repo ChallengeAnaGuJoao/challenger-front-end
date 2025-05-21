@@ -32,9 +32,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .3rem 1.5rem;
     background-color: var(--roxo-escuro);
-    min-height: 80px;
+    height: 80px;
 }
 
 .logoComTittle {
@@ -44,7 +43,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
 }
 
@@ -172,7 +171,6 @@ footer {
         text-align: center;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
     }
     
     .navMenu {
