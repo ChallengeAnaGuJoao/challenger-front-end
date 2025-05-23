@@ -10,6 +10,9 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
 
   const nomeInput = document.getElementById("nome");
   const emailInput = document.getElementById("email");
+  const emailObrigatorioMsg = document.getElementById("obrigaEmail");
+  const nomeObrigatorioMsg = document.getElementById("obrigaNome");
+  const formatoEmailMsg = document.getElementById("formatoEmail");
   const nome = nomeInput.value.trim();
   const email = emailInput.value.trim();
   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -21,17 +24,19 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
 
   if (nome === "") {
     nomeInput.classList.add("erro");
-    alert("Campo nome é obrigatorio");
     formValido = false;
+    nomeObrigatorioMsg.style.display = "block"
   }
 
   if (email === "") {
+    formatoEmailMsg.style.display = "none"
     emailInput.classList.add("erro");
-    alert("Campo email é obrigatorio");
     formValido = false;
+    emailObrigatorioMsg.style.display = "block"
   } else if (!regexEmail.test(email)) {
     emailInput.classList.add("erro");
-    alert("Por favor, insira um e-mail válido.")
+    formatoEmailMsg.style.display = "block"
+    emailObrigatorioMsg.style.display = "none"
     formValido = false;
   }
 

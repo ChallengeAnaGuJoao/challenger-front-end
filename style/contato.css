@@ -41,6 +41,11 @@ main {
     box-shadow: 0 8px 24px rgba(112,112,112,0.3);
 }
 
+.errorMsg{
+    color: red;
+    display: none;
+}
+
 .tituloContato {
     text-align: center;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
