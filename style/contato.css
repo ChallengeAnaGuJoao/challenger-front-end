@@ -112,6 +112,11 @@ main {
     white-space: normal;
 }
 
+input.erro,
+textarea.erro {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
 
 @media (max-width: 768px) {
     .tituloContato {

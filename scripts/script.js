@@ -8,27 +8,35 @@
 document.getElementById("formulario").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const nome = document.getElementById("nome").value;
-  const email = document.getElementById("email").value;
+  const nomeInput = document.getElementById("nome");
+  const emailInput = document.getElementById("email");
+  const nome = nomeInput.value.trim();
+  const email = emailInput.value.trim();
   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (nome.trim() === "") {
+  let formValido = true;
+
+  nomeInput.classList.remove("erro");
+  emailInput.classList.remove("erro");
+
+  if (nome === "") {
+    nomeInput.classList.add("erro");
     alert("Campo nome é obrigatorio");
-    return;
+    formValido = false;
   }
 
   if (email === "") {
+    emailInput.classList.add("erro");
     alert("Campo email é obrigatorio");
-    return;
-  }
-
-  if (!regexEmail.test(email)) {
+    formValido = false;
+  } else if (!regexEmail.test(email)) {
+    emailInput.classList.add("erro");
     alert("Por favor, insira um e-mail válido.")
-    return;
+    formValido = false;
   }
 
-  alert("Formulário enviado com sucesso!");
-
-  this.submit();
-  
+  if (formValido) {
+    alert("Formulário enviado com sucesso!");
+    this.submit();
+  }
 });
