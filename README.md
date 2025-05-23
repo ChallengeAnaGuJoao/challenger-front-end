@@ -1,55 +1,56 @@
 # Atende+
 
-## :dart: Objetivo do projeto
+## Objetivo do projeto
 
 ["O objetivo de nosso projeto é diminuir a taxa de absenteísmo existente na área de teleconsulta do IMREA (Instituto de Reabilitação do Hospital das Clínicas da Faculdade de Medicina da USP) e para que a meta seja alcançada, foi identificada como solução a criação de um chatbot e página web capazes de auxiliarem o paciente em diversas tarefas e que atendam o usuário quanto a usabilidade experiência, conseguindo atender as demandas necessitadas"]
 
-## :file_folder: Estrutura de Pastas e arquivos
-
+## Estrutura de Pastas e arquivos
+<pre>
 projeto-raiz/
-|
-|__ image/
-|  |__202867320.jfif
-|  |__1601698936285.jfif
-|  |__16776338337783.jfif
-|  |__anaflavia.jpeg
-|  |__atende+.png
-|  |__bird_2.eps
-|  |__bird_2.jpg
-|  |__botao-adicionar.png
-|  |__contact-us-animate.svg
-|  |__github.png
-|  |__gradiente-de-ilustracao-de-passaro-colorido.png
-|  |__gustavoterada.jpeg
-|  |__hc.png
-|  |__hospital-family-visit-animate.svg
-|  |__joaoguilherme.jpeg
-|  |__linkedin.png
-|  |__logo_fav_invert.jpg
-|  |__logo_fav.jpg
-|  |__logo_size_invert.jpg
-|  |__logo_size_.jpg
-|  |__passao.svg
-|  |__sinal-de-menos.png
-|
-|__ scripts
-|  |__script.js
-|
-|__ style
-|  |__contato.css
-|  |__faq.qcss
-|  |__index.css
-|  |__integrantes.css
-|  |__styleGolbal.css
-|
-|__ atende+.png
-|__chatbot.html
-|__contato.html
-|__faq.html
-|__hc.png
-|__index.html
-|__integrantes.html
-|__README.md
+│
+├── image/
+│   ├── 202867320.jfif
+│   ├── 1601698936285.jfif
+│   ├── 16776338337783.jfif
+│   ├── anaflavia.jpeg
+│   ├── atende+.png
+│   ├── bird_2.eps
+│   ├── bird_2.jpg
+│   ├── botao-adicionar.png
+│   ├── contact-us-animate.svg
+│   ├── github.png
+│   ├── gradiente-de-ilustracao-de-passaro-colorido.png
+│   ├── gustavoterada.jpeg
+│   ├── hc.png
+│   ├── hospital-family-visit-animate.svg
+│   ├── joaoguilherme.jpeg
+│   ├── linkedin.png
+│   ├── logo_fav_invert.jpg
+│   ├── logo_fav.jpg
+│   ├── logo_size_invert.jpg
+│   ├── logo_size_.jpg
+│   ├── passao.svg
+│   └── sinal-de-menos.png
+│
+├── scripts/
+│   └── script.js
+│
+├── style/
+│   ├── contato.css
+│   ├── faq.qcss
+│   ├── index.css
+│   ├── integrantes.css
+│   └── styleGolbal.css
+│
+├── atende+.png
+├── chatbot.html
+├── contato.html
+├── faq.html
+├── hc.png
+├── index.html
+├── integrantes.html
+└── README.md
+</pre>
 
 ## Tecnologias utilizadas
 
