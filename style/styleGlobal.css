@@ -149,6 +149,29 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+#voltarAoTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--amarelo-claro);
+  color: var(--roxo-escuro);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+
+#voltarAoTopo:hover {
+  background-color: #fff;
+}
+
+
 
 @media (max-width: 1300px) {
     .mainTittle {
@@ -244,9 +267,9 @@ footer {
         padding: 1rem;
     }
     .tituloSessao{
-        font-size: 1.3rem !important;
+        font-size: 1.3rem;
     }
     .card h3 {
-        font-size: 1rem !important;
+        font-size: 1rem;
     }
 }
