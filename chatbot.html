@@ -32,74 +32,77 @@
       </nav>
     </header>
   <main>
-  <div class="chatbotWrapper">
-    <div class="imagemChat">
-      <img src="image/chat-bot-animate.svg" alt="Pessoa conversando com um chatbot" />
-    </div>
-
-    <section class="chatContainer">
-      <h2 class="tituloChat">Assistente Virtual</h2>
-
-      <div class="chatBox">
-        <div class="mensagem bot">
-          <p>Olá! Eu sou o assistente da AtendePlus. Como posso ajudar?</p>
-        </div>
-        <div class="mensagem user">
-          <p>Gostaria de saber como agendar uma teleconsulta.</p>
-        </div>
-        <div class="mensagem bot">
-          <p>Claro! Você pode agendar pelo nosso site ou ligando para (11) 91234-5678.</p>
-        </div>
+    <div class="chatbotWrapper">
+      <div class="imagemChat">
+        <img src="image/chat-bot-animate.svg" alt="Pessoa conversando com um chatbot" />
       </div>
 
-      <form class="chatInputArea">
-        <input type="text" placeholder="Digite sua mensagem..." />
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </div>
-</main>
+      <section class="rightContainer">
 
- <footer>
-  <div class="colunas">
-    <div class="coluna">
-      <h3 class="tittleColuna">Unidades</h3>
-      <p class="textColuna">
-        Av. Paulista, 1106 - 7º andar<br />
-        Bela Vista, São Paulo - SP<br />
-        CEP: 01311-000
-      </p>
-      <p class="textColuna">
-        Av. Lins de Vasconcelos, 1264 - Aclimação<br />
-        São Paulo - SP<br />
-        CEP: 01538-001
-      </p>
+        <h1>Teste agora nosso chatbot!</h1>
+        <p>
+          Clique no ícone igual a este no canto inferior direito da página.
+        </p>
+        <img class="chatIcon" src="image/chatIcon.png" alt="ícone do chatbot">
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="colunas">
+      <div class="coluna">
+        <h3 class="tittleColuna">Unidades</h3>
+        <p class="textColuna">
+          Av. Paulista, 1106 - 7º andar<br />
+          Bela Vista, São Paulo - SP<br />
+          CEP: 01311-000
+        </p>
+        <p class="textColuna">
+          Av. Lins de Vasconcelos, 1264 - Aclimação<br />
+          São Paulo - SP<br />
+          CEP: 01538-001
+        </p>
+      </div>
+
+      <div class="coluna">
+        <h3 class="tittleColuna">Contato</h3>
+        <p class="textColuna">
+          Tel: (11) 3385-8010<br />
+          E-mail: atendimento@fiap.com.br
+        </p>
+        <p class="textColuna">
+          Horário de atendimento:<br />
+          Segunda a Sexta, das 8h às 18h
+        </p>
+      </div>
+
+      <div class="coluna">
+        <h3 class="tittleColuna">Links úteis</h3>
+        <p class="textColuna"><a href="#">Política de Privacidade</a></p>
+        <p class="textColuna"><a href="#">Termos de Uso</a></p>
+        <p class="textColuna"><a href="#">Fale Conosco</a></p>
+      </div>
     </div>
 
-    <div class="coluna">
-      <h3 class="tittleColuna">Contato</h3>
-      <p class="textColuna">
-        Tel: (11) 3385-8010<br />
-        E-mail: atendimento@fiap.com.br
-      </p>
-      <p class="textColuna">
-        Horário de atendimento:<br />
-        Segunda a Sexta, das 8h às 18h
-      </p>
+    <div class="copy">
+      <p class="copytext">&copy; Feito por alunos da FIAP – Todos os direitos reservados</p>
     </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "a4d499d7-5169-4f9f-8c02-c5813e164db8",
+      region: "au-syd",
+      serviceInstanceID: "06cae0f0-b964-4f1f-9c8b-78a25030e1c4",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
 
-    <div class="coluna">
-      <h3 class="tittleColuna">Links úteis</h3>
-      <p class="textColuna"><a href="#">Política de Privacidade</a></p>
-      <p class="textColuna"><a href="#">Termos de Uso</a></p>
-      <p class="textColuna"><a href="#">Fale Conosco</a></p>
-    </div>
-  </div>
-
-  <div class="copy">
-    <p class="copytext">&copy; Feito por alunos da FIAP – Todos os direitos reservados</p>
-  </div>
-</footer>
-    <script src="scripts/script.js"></script>
-  </body>
 </html>
