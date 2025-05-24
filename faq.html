@@ -162,23 +162,11 @@
   <div class="copy">
     <p class="copytext">&copy; Feito por alunos da FIAP – Todos os direitos reservados</p>
   </div>
+   <button id="voltarAoTopo" aria-label="Voltar ao topo">
+  <i class="fas fa-arrow-up"></i>
+</button>
 </footer>
-    <script>
-        document.querySelectorAll('.faq-toggle').forEach(button => {
-          button.addEventListener('click', () => {
-            const resposta = button.nextElementSibling;
-            const icon = button.querySelector('.icon');
-      
-            resposta.classList.toggle('hidden');
-      
-            if (resposta.classList.contains('hidden')) {
-              icon.classList.replace('fa-minus', 'fa-plus');
-            } else {
-              icon.classList.replace('fa-plus', 'fa-minus');
-            }
-          });
-        });
-      </script>
+      <script src="scripts/scriptFaq.js"></script>
       <script src="scripts/script.js"></script>
 </body>
 </html>

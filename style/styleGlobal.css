@@ -145,7 +145,7 @@ footer {
 .copy {
     text-align: center;
     font-size: 0.9rem;
-    color: var(--branco);
+    color: var(--amarelo-claro);
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -153,7 +153,7 @@ footer {
 #voltarAoTopo {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 100px;
   background-color: var(--amarelo-claro);
   color: var(--roxo-escuro);
   border: none;
@@ -171,8 +171,6 @@ footer {
 #voltarAoTopo:hover {
   background-color: #fff;
 }
-
-
 
 @media (max-width: 1300px) {
     .mainTittle {
