@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style/styleGlobal.css" />
-  <link rel="stylesheet" href="style/chatbot.css" />
-  <link rel="icon" href="atende+.png" type="image/png">
-  <title>ChatBot</title>
-</head>
-
-<body>
-  <header>
-    <a href="index.html" class="logoLink">
-      <div class="logoComTittle">
-        <img src="image/atende+.png" alt="Logo do projeto" class="logo" />
-      </div>
-    </a>
-    <button class="menuToggle" aria-label="Abrir menu">☰</button>
-    <nav class="navMenu">
-      <ul class="UlHeader">
-        <li class="liHeader"><a href="index.html">Home</a></li>
-        <li class="liHeader"><a href="integrantes.html">Integrantes</a></li>
-        <li class="liHeader"><a href="faq.html">FAQ</a></li>
-        <li class="liHeader"><a href="contato.html">Contato</a></li>
-        <li class="liHeader"><a class="selected" href="">ChatBot</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styleGlobal.css" />
+    <link rel="stylesheet" href="style/chatbot.css" />
+    <link rel="icon" href="atende+.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>ChatBot</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logoLink">
+        <div class="logoComTittle">
+          <img
+            src="image/atende+.png"
+            alt="Logo do projeto"
+            class="logo"
+          />
+        </div>
+      </a>
+      <button class="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav class="navMenu">
+        <ul class="UlHeader">
+          <li class="liHeader"><a href="index.html">Home</a></li>
+          <li class="liHeader"><a href="integrantes.html">Integrantes</a></li>
+          <li class="liHeader"><a href="faq.html">FAQ</a></li>
+          <li class="liHeader"><a href="contato.html">Contato</a></li>
+          <li class="liHeader"><a class="selected" href="">ChatBot</a></li>
+        </ul>
+      </nav>
+    </header>
   <main>
     <div class="chatbotWrapper">
       <div class="imagemChat">
@@ -85,6 +88,9 @@
     <div class="copy">
       <p class="copytext">&copy; Feito por alunos da FIAP – Todos os direitos reservados</p>
     </div>
+     <button id="voltarAoTopo" aria-label="Voltar ao topo">
+  <i class="fas fa-arrow-up"></i>
+</button>
   </footer>
   <script src="scripts/script.js"></script>
 </body>

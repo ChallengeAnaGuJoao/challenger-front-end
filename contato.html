@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style/styleGlobal.css" />
     <link rel="stylesheet" href="style/contato.css" />
     <link rel="icon" href="atende+.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   </head>
+  
   <body>
     <header>
       <a href="index.html" class="logoLink">
@@ -38,24 +40,24 @@
 
         <section class="contatoContainer">
           <h2 class="tituloContato">Fale com a gente</h2>
-          <form class="formContato">
+          <form id="formulario" class="formContato">
             <label for="nome">Nome</label>
             <input
               type="text"
               id="nome"
               name="nome"
               placeholder="Seu nome"
-              required
             />
+            <p id="obrigaNome" class="errorMsg">É obrigatório preencher o nome</p>
 
-            <label for="email">Email</label>
+            <label for="email">E-mail:</label>
             <input
-              type="email"
               id="email"
               name="email"
               placeholder="seu@email.com"
-              required
             />
+            <p id="obrigaEmail" class="errorMsg">É obrigatório preencher o e-mail</p>
+            <p id="formatoEmail" class="errorMsg">Formato de e-mail inválido</p>
 
             <label for="mensagem">Mensagem</label>
             <textarea
@@ -63,7 +65,6 @@
               name="mensagem"
               rows="5"
               placeholder="Escreva sua mensagem..."
-              required
             ></textarea>
 
             <button type="submit">Enviar</button>
@@ -118,7 +119,10 @@
   <div class="copy">
     <p class="copytext">&copy; Feito por alunos da FIAP – Todos os direitos reservados</p>
   </div>
+   <button id="voltarAoTopo" aria-label="Voltar ao topo">
+  <i class="fas fa-arrow-up"></i>
+</button>
 </footer>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/scriptContato.js"></script>
   </body>
 </html>
