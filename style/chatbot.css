@@ -22,7 +22,7 @@
 
 .imagemChat img {
   width: 100%;
-  max-height: 500px;
+  max-height: 400px;
   object-fit: contain;
   border-radius: 12px;
 }
@@ -50,8 +50,10 @@ main{
 
 
 @media screen and (max-width: 768px) {
-  .imagemChat {
-    display: none;
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .chatContainer {
@@ -60,10 +62,16 @@ main{
     padding: 2rem 1.5rem;
   }
 
+   .imagemChat{
+    max-height: none;
+    width: 90vw;
+    max-width: none;
+  }
+
   .chatbotWrapper {
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 5rem;
     padding: 1rem;
   }
 
@@ -74,5 +82,13 @@ main{
   .chatInputArea button {
     width: 100%;
     margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .testeAgora{
+    font-size: 1rem;
+  }
+  .cliqueAqui{
+    font-size: 0.8rem;
   }
 }

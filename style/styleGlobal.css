@@ -139,7 +139,7 @@ footer {
 
 .textColuna > a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--amarelo-claro);
 }
 
 .copy {
@@ -185,13 +185,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero-container{
-        justify-content: center !important;
-        align-items: center;
-    }
-    main{
-        justify-content: center;
-    }
       .menuToggle {
         display: block;
         position: absolute;
@@ -203,7 +196,7 @@ footer {
         text-align: center;
         align-items: center;
         justify-content: center;
-        padding-top: 6rem;
+        padding: 6rem 0;
     }
     
     .navMenu {
