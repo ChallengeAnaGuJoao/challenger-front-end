@@ -56,9 +56,9 @@ CHALLENGER-FRONT-END/
 
 ## Integrantes
 
-- [Ana Flavia Camelo](https://github.com/afcamelo)
-- [Gustavo Kenji Terada](https://github.com/Gkenji110)
-- [João Guilherme Carvalho Novaes](https://github.com/JoaoGuiNovaes)
+- [Ana Flavia Camelo - RM561489](https://github.com/afcamelo)
+- [Gustavo Kenji Terada - RM562745](https://github.com/Gkenji110)
+- [João Guilherme Carvalho Novaes - RM566234](https://github.com/JoaoGuiNovaes)
 
 ## Endereço do repositório
 
